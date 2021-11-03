@@ -9,5 +9,6 @@ void notenrechner();
 void guessgame();
 void tictactoe();
 void rocpapsci();
+void umrechner();
 
 #endif //AUFGABEN_UTILS_H
