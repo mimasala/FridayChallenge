@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.c
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+conio.h
+-
+time.h
+-
+
