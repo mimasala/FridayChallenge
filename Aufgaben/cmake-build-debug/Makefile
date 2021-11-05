@@ -128,6 +128,30 @@ Aufgaben/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/build
 .PHONY : Aufgaben/fast
 
+BADAPPLE.obj: BADAPPLE.c.obj
+.PHONY : BADAPPLE.obj
+
+# target to build an object file
+BADAPPLE.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj
+.PHONY : BADAPPLE.c.obj
+
+BADAPPLE.i: BADAPPLE.c.i
+.PHONY : BADAPPLE.i
+
+# target to preprocess a source file
+BADAPPLE.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.i
+.PHONY : BADAPPLE.c.i
+
+BADAPPLE.s: BADAPPLE.c.s
+.PHONY : BADAPPLE.s
+
+# target to generate assembly for a file
+BADAPPLE.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.s
+.PHONY : BADAPPLE.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -209,6 +233,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Aufgaben
+	@echo ... BADAPPLE.obj
+	@echo ... BADAPPLE.i
+	@echo ... BADAPPLE.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

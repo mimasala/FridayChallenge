@@ -74,6 +74,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/BADAPPLE.c">
+			<Option target="Aufgaben"/>
+		</Unit>
 		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/main.c">
 			<Option target="Aufgaben"/>
 		</Unit>
