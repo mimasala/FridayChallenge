@@ -45,6 +45,7 @@ void durchschnitt() {
         }
         printf("Average = %f\n", total / (float) length);
     }
+    getch();
 }
 
 
