@@ -104,25 +104,25 @@ CMakeFiles/Aufgaben.dir/notenrechner.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Aufgaben.dir/notenrechner.c.s"
 	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\notenrechner.c -o CMakeFiles\Aufgaben.dir\notenrechner.c.s
 
-CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj: CMakeFiles/Aufgaben.dir/flags.make
-CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj: ../BADAPPLE.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj"
-	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Aufgaben.dir\BADAPPLE.c.obj -c C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\BADAPPLE.c
+CMakeFiles/Aufgaben.dir/rick_roll.c.obj: CMakeFiles/Aufgaben.dir/flags.make
+CMakeFiles/Aufgaben.dir/rick_roll.c.obj: ../rick_roll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Aufgaben.dir/rick_roll.c.obj"
+	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Aufgaben.dir\rick_roll.c.obj -c C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\rick_roll.c
 
-CMakeFiles/Aufgaben.dir/BADAPPLE.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Aufgaben.dir/BADAPPLE.c.i"
-	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\BADAPPLE.c > CMakeFiles\Aufgaben.dir\BADAPPLE.c.i
+CMakeFiles/Aufgaben.dir/rick_roll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Aufgaben.dir/rick_roll.c.i"
+	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\rick_roll.c > CMakeFiles\Aufgaben.dir\rick_roll.c.i
 
-CMakeFiles/Aufgaben.dir/BADAPPLE.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Aufgaben.dir/BADAPPLE.c.s"
-	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\BADAPPLE.c -o CMakeFiles\Aufgaben.dir\BADAPPLE.c.s
+CMakeFiles/Aufgaben.dir/rick_roll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Aufgaben.dir/rick_roll.c.s"
+	C:\MyTools\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Source\projects-c\FridayREPO\FridayChallenge\Aufgaben\rick_roll.c -o CMakeFiles\Aufgaben.dir\rick_roll.c.s
 
 # Object files for target Aufgaben
 Aufgaben_OBJECTS = \
 "CMakeFiles/Aufgaben.dir/main.c.obj" \
 "CMakeFiles/Aufgaben.dir/utils.c.obj" \
 "CMakeFiles/Aufgaben.dir/notenrechner.c.obj" \
-"CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj"
+"CMakeFiles/Aufgaben.dir/rick_roll.c.obj"
 
 # External object files for target Aufgaben
 Aufgaben_EXTERNAL_OBJECTS =
@@ -130,7 +130,7 @@ Aufgaben_EXTERNAL_OBJECTS =
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/main.c.obj
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/utils.c.obj
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/notenrechner.c.obj
-Aufgaben.exe: CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj
+Aufgaben.exe: CMakeFiles/Aufgaben.dir/rick_roll.c.obj
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/build.make
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/linklibs.rsp
 Aufgaben.exe: CMakeFiles/Aufgaben.dir/objects1.rsp

@@ -74,13 +74,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/BADAPPLE.c">
-			<Option target="Aufgaben"/>
-		</Unit>
 		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/main.c">
 			<Option target="Aufgaben"/>
 		</Unit>
 		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/notenrechner.c">
+			<Option target="Aufgaben"/>
+		</Unit>
+		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/rick_roll.c">
+			<Option target="Aufgaben"/>
+		</Unit>
+		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/rick_roll.h">
 			<Option target="Aufgaben"/>
 		</Unit>
 		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.c">

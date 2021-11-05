@@ -10,5 +10,6 @@ void guessgame();
 void tictactoe();
 void rocpapsci();
 void umrechner();
+void rickroll();
 
 #endif //AUFGABEN_UTILS_H

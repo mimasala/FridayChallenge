@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/BADAPPLE.c" "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/cmake-build-debug/CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj"
   "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/main.c" "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/cmake-build-debug/CMakeFiles/Aufgaben.dir/main.c.obj"
   "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/notenrechner.c" "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/cmake-build-debug/CMakeFiles/Aufgaben.dir/notenrechner.c.obj"
+  "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/rick_roll.c" "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/cmake-build-debug/CMakeFiles/Aufgaben.dir/rick_roll.c.obj"
   "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.c" "C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/cmake-build-debug/CMakeFiles/Aufgaben.dir/utils.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

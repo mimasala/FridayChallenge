@@ -3,8 +3,12 @@
 
 CMakeFiles/Aufgaben.dir/main.c.obj: \
  ../main.c \
+ ../rick_roll.h \
  ../utils.h
 CMakeFiles/Aufgaben.dir/notenrechner.c.obj: \
  ../notenrechner.c
+CMakeFiles/Aufgaben.dir/rick_roll.c.obj: \
+ ../rick_roll.c \
+ ../rick_roll.h
 CMakeFiles/Aufgaben.dir/utils.c.obj: \
  ../utils.c

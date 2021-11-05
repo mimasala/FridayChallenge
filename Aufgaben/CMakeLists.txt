@@ -3,4 +3,4 @@ project(Aufgaben C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Aufgaben main.c utils.h utils.c notenrechner.c BADAPPLE.c)
+add_executable(Aufgaben main.c utils.h utils.c notenrechner.c rick_roll.c rick_roll.h)

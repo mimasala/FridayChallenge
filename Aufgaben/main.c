@@ -8,7 +8,8 @@
 #include <stddef.h>
 #include <time.h>
 #include "utils.h"
-#include <dos.h> // delay()
+#include "rick_roll.h"
+
 #include <string.h>
 
 
@@ -42,7 +43,7 @@ int main() {
 
     value = strcmp(pwd,password);
         if (value != 0){
-            printf("wrong password");
+            rickroll();
             getch();
         }
     } while (value != 0);
@@ -87,7 +88,7 @@ int main() {
     printf("      Choose a Program: ");
     scanf("%d", &choose);
     if (choose >8 || choose < 1) {
-        printf("                                            NUMBER BETWEEN 1 AND 7: ");
+        printf("just pick a number between 1 nd 8 its not that hard");
         choose = getch();
     }
 

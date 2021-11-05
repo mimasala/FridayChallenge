@@ -128,30 +128,6 @@ Aufgaben/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/build
 .PHONY : Aufgaben/fast
 
-BADAPPLE.obj: BADAPPLE.c.obj
-.PHONY : BADAPPLE.obj
-
-# target to build an object file
-BADAPPLE.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.obj
-.PHONY : BADAPPLE.c.obj
-
-BADAPPLE.i: BADAPPLE.c.i
-.PHONY : BADAPPLE.i
-
-# target to preprocess a source file
-BADAPPLE.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.i
-.PHONY : BADAPPLE.c.i
-
-BADAPPLE.s: BADAPPLE.c.s
-.PHONY : BADAPPLE.s
-
-# target to generate assembly for a file
-BADAPPLE.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/BADAPPLE.c.s
-.PHONY : BADAPPLE.c.s
-
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -200,6 +176,30 @@ notenrechner.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/notenrechner.c.s
 .PHONY : notenrechner.c.s
 
+rick_roll.obj: rick_roll.c.obj
+.PHONY : rick_roll.obj
+
+# target to build an object file
+rick_roll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/rick_roll.c.obj
+.PHONY : rick_roll.c.obj
+
+rick_roll.i: rick_roll.c.i
+.PHONY : rick_roll.i
+
+# target to preprocess a source file
+rick_roll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/rick_roll.c.i
+.PHONY : rick_roll.c.i
+
+rick_roll.s: rick_roll.c.s
+.PHONY : rick_roll.s
+
+# target to generate assembly for a file
+rick_roll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/rick_roll.c.s
+.PHONY : rick_roll.c.s
+
 utils.obj: utils.c.obj
 .PHONY : utils.obj
 
@@ -233,15 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Aufgaben
-	@echo ... BADAPPLE.obj
-	@echo ... BADAPPLE.i
-	@echo ... BADAPPLE.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... notenrechner.obj
 	@echo ... notenrechner.i
 	@echo ... notenrechner.s
+	@echo ... rick_roll.obj
+	@echo ... rick_roll.i
+	@echo ... rick_roll.s
 	@echo ... utils.obj
 	@echo ... utils.i
 	@echo ... utils.s
