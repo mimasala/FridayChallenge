@@ -5,8 +5,7 @@
 #include <time.h>
 
 
-
-void durchschnitt () {
+void durchschnitt() {
     char str[80];
     const char s[2] = " ";
     char *token;
@@ -15,33 +14,31 @@ void durchschnitt () {
     int total = 0;
 
     printf("Bitte geben Sie die Zahlen ein (zwischen 4 und 6 durch Leerschlag getrennt):");
-    scanf(" %[^\n]",str);
+    scanf(" %[^\n]", str);
     /* get the first token */
     token = strtok(str, s);
     /* walk through other tokens */
-    while( token != NULL ) {
+    while (token != NULL) {
         int x = atof(token);
         numbers[count] = x;
         count++;
         token = strtok(NULL, s);
     }
     unsigned int length = strlen(numbers);
-    if(length < 4){
+    if (length < 4) {
         printf("that's under 4 you dumbo \n");
-    }
-    else if(length > 6){
+    } else if (length > 6) {
         printf("that's over 6 u dumbo\n");
     } else {
-        for(int i = 0; i < length; i++) {
+        for (int i = 0; i < length; i++) {
             total += numbers[i];
         }
-        printf("Average = %f\n", total/(float)length);
+        printf("Average = %f\n", total / (float) length);
     }
 }
 
 
-int printRandom(int low, int up, int cou)
-{
+int printRandom(int low, int up, int cou) {
     int i;
     for (i = 0; i < cou; i++) {
         int number = (rand() % (up - low + 1)) + low;
@@ -50,9 +47,7 @@ int printRandom(int low, int up, int cou)
 }
 
 
-
-void guess(int N)
-{
+void guess(int N) {
     int number, guess, numberofguess = 0;
     int lower = 1, upper = 100, count = 1;
     srand(time(0));
@@ -65,17 +60,13 @@ void guess(int N)
             break;
         }
         scanf("%d", &guess);
-        if (guess > number)
-        {
+        if (guess > number) {
             printf("Lower number please!\n");
             numberofguess++;
-        }
-        else if (number > guess)
-        {
+        } else if (number > guess) {
             printf("Higher number please!\n");
             numberofguess++;
-        }
-        else if (number == guess)
+        } else if (number == guess)
             printf("\n\n\n"
                    "$$\\     $$\\                                       $$\\           $$\\ \n"
                    "\\$$\\   $$  |                                      \\__|          $$ |\n"
@@ -92,20 +83,18 @@ void guess(int N)
 
     } while (guess != number);
 }
-void guessgame()
-{
+
+void guessgame() {
     int N = 100;
     // Function call
     guess(N);
 }
 
 
-
-
-
-char square[10] = { 'o', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+char square[10] = {'o', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
 int checkwin();
+
 void board();
 
 
@@ -113,8 +102,7 @@ void tictactoe() {
 
     int player = 1, i, choice;
     char mark;
-    do
-    {
+    do {
         board();
         player = (player % 2) ? 1 : 2;
         printf("Player %d, enter a number:  ", player);
@@ -140,18 +128,17 @@ void tictactoe() {
             square[9] = mark;
         else if (choice == 69)
             printf("haha the funny number");
-        else
-        {
+        else {
             printf("Invalid move ");
             player--;
             getch();
         }
         i = checkwin();
         player++;
-    }while (i ==  - 1);
+    } while (i == -1);
     board();
     if (i == 1)
-        printf("Opponent used \"Paper Bomb\"! He missed and fainted because of your \"Scissor slice\".\n\n \n"
+        printf(
                "$$\\     $$\\                                       $$\\           $$\\ \n"
                "\\$$\\   $$  |                                      \\__|          $$ |\n"
                " \\$$\\ $$  /$$$$$$\\  $$\\   $$\\       $$\\  $$\\  $$\\ $$\\ $$$$$$$\\  $$ |\n"
@@ -170,9 +157,7 @@ void tictactoe() {
 }
 
 
-
-int checkwin()
-{
+int checkwin() {
     if (square[1] == square[2] && square[2] == square[3])
         return 1;
     else if (square[4] == square[5] && square[5] == square[6])
@@ -194,10 +179,10 @@ int checkwin()
                                                                          != '7' && square[8] != '8' && square[9] != '9')
         return 0;
     else
-        return  - 1;
+        return -1;
 }
 
-void board(){
+void board() {
     system("cls");
     printf("\n\n\tTic Tac Toe\n\n");
 
@@ -220,12 +205,10 @@ void board(){
     printf("     |     |     \n\n");
 
 
-
-
 }
 
 
-void rocpapsci(){
+void rocpapsci() {
     int input;
     int nMax = 2;
     int nMin = 0;
@@ -240,13 +223,31 @@ void rocpapsci(){
         switch (input) {
             case (1):
                 if (x == 0) {
-                    printf("Opponent used \"Rock Throw\"! Both competitors are unable to keep fighting.\n\n It's a draw!");
+                    printf("Opponent used \"Rock Throw\"! Both competitors are unable to keep fighting.\n\n "
+                           "$$\\   $$\\  $$\\                                $$$$$$$\\                                   $$\\ \n"
+                           "\\__|  $$ | $  |                               $$  __$$\\                                  $$ |\n"
+                           "$$\\ $$$$$$\\\\_/ $$$$$$$\\        $$$$$$\\        $$ |  $$ | $$$$$$\\  $$$$$$\\  $$\\  $$\\  $$\\ $$ |\n"
+                           "$$ |\\_$$  _|  $$  _____|       \\____$$\\       $$ |  $$ |$$  __$$\\ \\____$$\\ $$ | $$ | $$ |$$ |\n"
+                           "$$ |  $$ |    \\$$$$$$\\         $$$$$$$ |      $$ |  $$ |$$ |  \\__|$$$$$$$ |$$ | $$ | $$ |\\__|\n"
+                           "$$ |  $$ |$$\\  \\____$$\\       $$  __$$ |      $$ |  $$ |$$ |     $$  __$$ |$$ | $$ | $$ |    \n"
+                           "$$ |  \\$$$$  |$$$$$$$  |      \\$$$$$$$ |      $$$$$$$  |$$ |     \\$$$$$$$ |\\$$$$$\\$$$$  |$$\\ \n"
+                           "\\__|   \\____/ \\_______/        \\_______|      \\_______/ \\__|      \\_______| \\_____\\____/ \\__|");
                 }
                 if (x == 1) {
-                    printf("Opponent used \"Paper Bomb\"! You were knocked out.\n\n You lost!");
+                    printf("Opponent used \"Paper Bomb\"! You were knocked out.\n\n"
+                           "$$\\                                               $$\\                 $$\\                 \n"
+                           "$$ |                                              $$ |                $$ |                \n"
+                           "$$ | $$$$$$\\   $$$$$$\\   $$$$$$$\\  $$$$$$\\        $$$$$$$\\   $$$$$$\\  $$$$$$$\\   $$$$$$\\  \n"
+                           "$$ |$$  __$$\\ $$  __$$\\ $$  _____|$$  __$$\\       $$  __$$\\  \\____$$\\ $$  __$$\\  \\____$$\\ \n"
+                           "$$ |$$ /  $$ |$$ /  $$ |\\$$$$$$\\  $$ |  \\__|      $$ |  $$ | $$$$$$$ |$$ |  $$ | $$$$$$$ |\n"
+                           "$$ |$$ |  $$ |$$ |  $$ | \\____$$\\ $$ |            $$ |  $$ |$$  __$$ |$$ |  $$ |$$  __$$ |\n"
+                           "$$ |\\$$$$$$  |\\$$$$$$  |$$$$$$$  |$$ |            $$ |  $$ |\\$$$$$$$ |$$ |  $$ |\\$$$$$$$ |\n"
+                           "\\__| \\______/  \\______/ \\_______/ \\__|            \\__|  \\__| \\_______|\\__|  \\__| \\_______|"
+                           ""
+                           "\n\n-9999999999999999 social credit");
                 }
                 if (x == 2) {
-                    printf("Opponent used \"X-Scissor\"! He missed and fainted because of your \"Rock Throw.\"\n\n \n"
+                    printf("Opponent used \"X-Scissor\"! He missed and fainted because of your \"Rock Throw.\"\n\n\n"
                            "$$\\     $$\\                                       $$\\           $$\\ \n"
                            "\\$$\\   $$  |                                      \\__|          $$ |\n"
                            " \\$$\\ $$  /$$$$$$\\  $$\\   $$\\       $$\\  $$\\  $$\\ $$\\ $$$$$$$\\  $$ |\n"
@@ -257,12 +258,13 @@ void rocpapsci(){
                            "    \\__|   \\______/  \\______/        \\_____\\____/ \\__|\\__|  \\__|\\__|\n"
                            "                                                                    \n"
                            "                                                                    \n"
-                           "                                                                    ");
+                           "                                                                    "
+                           "");
                 }
                 break;
             case (2):
                 if (x == 0) {
-                    printf("Opponent used \"Rock Throw\"! He missed and fainted because of your \"Paper Claw\".\n\n \n"
+                    printf("Opponent used \"Rock Throw\"! He missed and fainted because of your \"Paper Claw\".\n\n\n"
                            "$$\\     $$\\                                       $$\\           $$\\ \n"
                            "\\$$\\   $$  |                                      \\__|          $$ |\n"
                            " \\$$\\ $$  /$$$$$$\\  $$\\   $$\\       $$\\  $$\\  $$\\ $$\\ $$$$$$$\\  $$ |\n"
@@ -276,18 +278,44 @@ void rocpapsci(){
                            "                                                                    ");
                 }
                 if (x == 1) {
-                    printf("Opponent used \"Paper Bomb\"! Both competitors are unable to keep fighting.\n\n It's a draw!");
+                    printf("Opponent used \"Paper Bomb\"! Both competitors are unable to keep fighting.\n\n"
+                           "$$\\   $$\\  $$\\                                $$$$$$$\\                                   $$\\ \n"
+                           "\\__|  $$ | $  |                               $$  __$$\\                                  $$ |\n"
+                           "$$\\ $$$$$$\\\\_/ $$$$$$$\\        $$$$$$\\        $$ |  $$ | $$$$$$\\  $$$$$$\\  $$\\  $$\\  $$\\ $$ |\n"
+                           "$$ |\\_$$  _|  $$  _____|       \\____$$\\       $$ |  $$ |$$  __$$\\ \\____$$\\ $$ | $$ | $$ |$$ |\n"
+                           "$$ |  $$ |    \\$$$$$$\\         $$$$$$$ |      $$ |  $$ |$$ |  \\__|$$$$$$$ |$$ | $$ | $$ |\\__|\n"
+                           "$$ |  $$ |$$\\  \\____$$\\       $$  __$$ |      $$ |  $$ |$$ |     $$  __$$ |$$ | $$ | $$ |    \n"
+                           "$$ |  \\$$$$  |$$$$$$$  |      \\$$$$$$$ |      $$$$$$$  |$$ |     \\$$$$$$$ |\\$$$$$\\$$$$  |$$\\ \n"
+                           "\\__|   \\____/ \\_______/        \\_______|      \\_______/ \\__|      \\_______| \\_____\\____/ \\__|");
                 }
                 if (x == 2) {
-                    printf("Opponent used \"X-Scissor\"! You were knocked out.\n\n You lost!");
+                    printf("Opponent used \"X-Scissor\"! You were knocked out.\n\n"
+                           "$$\\                                               $$\\                 $$\\                 \n"
+                           "$$ |                                              $$ |                $$ |                \n"
+                           "$$ | $$$$$$\\   $$$$$$\\   $$$$$$$\\  $$$$$$\\        $$$$$$$\\   $$$$$$\\  $$$$$$$\\   $$$$$$\\  \n"
+                           "$$ |$$  __$$\\ $$  __$$\\ $$  _____|$$  __$$\\       $$  __$$\\  \\____$$\\ $$  __$$\\  \\____$$\\ \n"
+                           "$$ |$$ /  $$ |$$ /  $$ |\\$$$$$$\\  $$ |  \\__|      $$ |  $$ | $$$$$$$ |$$ |  $$ | $$$$$$$ |\n"
+                           "$$ |$$ |  $$ |$$ |  $$ | \\____$$\\ $$ |            $$ |  $$ |$$  __$$ |$$ |  $$ |$$  __$$ |\n"
+                           "$$ |\\$$$$$$  |\\$$$$$$  |$$$$$$$  |$$ |            $$ |  $$ |\\$$$$$$$ |$$ |  $$ |\\$$$$$$$ |\n"
+                           "\\__| \\______/  \\______/ \\_______/ \\__|            \\__|  \\__| \\_______|\\__|  \\__| \\_______|"
+                           "-9999999999999999 social credit");
                 }
                 break;
             case (3):
                 if (x == 0) {
-                    printf("Opponent used \"Rock Throw\"! You were knocked out.\n\n You lost!");
+                    printf("Opponent used \"Rock Throw\"! You were knocked out.\n\n"
+                           "$$\\                                               $$\\                 $$\\                 \n"
+                           "$$ |                                              $$ |                $$ |                \n"
+                           "$$ | $$$$$$\\   $$$$$$\\   $$$$$$$\\  $$$$$$\\        $$$$$$$\\   $$$$$$\\  $$$$$$$\\   $$$$$$\\  \n"
+                           "$$ |$$  __$$\\ $$  __$$\\ $$  _____|$$  __$$\\       $$  __$$\\  \\____$$\\ $$  __$$\\  \\____$$\\ \n"
+                           "$$ |$$ /  $$ |$$ /  $$ |\\$$$$$$\\  $$ |  \\__|      $$ |  $$ | $$$$$$$ |$$ |  $$ | $$$$$$$ |\n"
+                           "$$ |$$ |  $$ |$$ |  $$ | \\____$$\\ $$ |            $$ |  $$ |$$  __$$ |$$ |  $$ |$$  __$$ |\n"
+                           "$$ |\\$$$$$$  |\\$$$$$$  |$$$$$$$  |$$ |            $$ |  $$ |\\$$$$$$$ |$$ |  $$ |\\$$$$$$$ |\n"
+                           "\\__| \\______/  \\______/ \\_______/ \\__|            \\__|  \\__| \\_______|\\__|  \\__| \\_______|"
+                           "\n\n-9999999999999999 social credit");
                 }
                 if (x == 1) {
-                    printf("Opponent used \"Paper Bomb\"! He missed and fainted because of your \"Scissor slice\".\n\n \n"
+                    printf("Opponent used \"Paper Bomb\"! He missed and fainted because of your \"Scissor slice\".\n\n\n"
                            "$$\\     $$\\                                       $$\\           $$\\ \n"
                            "\\$$\\   $$  |                                      \\__|          $$ |\n"
                            " \\$$\\ $$  /$$$$$$\\  $$\\   $$\\       $$\\  $$\\  $$\\ $$\\ $$$$$$$\\  $$ |\n"
@@ -301,11 +329,28 @@ void rocpapsci(){
                            "                                                                    ");
                 }
                 if (x == 2) {
-                    printf("Opponent used \"X-Scissor\"! Both competitors are unable to keep fighting.\n\n It's a draw!");
+                    printf("Opponent used \"X-Scissor\"! Both competitors are unable to keep fighting.\n\n "
+                           "$$\\   $$\\  $$\\                                $$$$$$$\\                                   $$\\ \n"
+                           "\\__|  $$ | $  |                               $$  __$$\\                                  $$ |\n"
+                           "$$\\ $$$$$$\\\\_/ $$$$$$$\\        $$$$$$\\        $$ |  $$ | $$$$$$\\  $$$$$$\\  $$\\  $$\\  $$\\ $$ |\n"
+                           "$$ |\\_$$  _|  $$  _____|       \\____$$\\       $$ |  $$ |$$  __$$\\ \\____$$\\ $$ | $$ | $$ |$$ |\n"
+                           "$$ |  $$ |    \\$$$$$$\\         $$$$$$$ |      $$ |  $$ |$$ |  \\__|$$$$$$$ |$$ | $$ | $$ |\\__|\n"
+                           "$$ |  $$ |$$\\  \\____$$\\       $$  __$$ |      $$ |  $$ |$$ |     $$  __$$ |$$ | $$ | $$ |    \n"
+                           "$$ |  \\$$$$  |$$$$$$$  |      \\$$$$$$$ |      $$$$$$$  |$$ |     \\$$$$$$$ |\\$$$$$\\$$$$  |$$\\ \n"
+                           "\\__|   \\____/ \\_______/        \\_______|      \\_______/ \\__|      \\_______| \\_____\\____/ \\__|");
                 }
                 break;
             default:
-                printf("You tried to run from battle and failed. You lost your Honor!\n");
+                printf("You tried to run from battle and failed. You lost your Honor!\n"
+                       "$$\\                                               $$\\                 $$\\                 \n"
+                       "$$ |                                              $$ |                $$ |                \n"
+                       "$$ | $$$$$$\\   $$$$$$\\   $$$$$$$\\  $$$$$$\\        $$$$$$$\\   $$$$$$\\  $$$$$$$\\   $$$$$$\\  \n"
+                       "$$ |$$  __$$\\ $$  __$$\\ $$  _____|$$  __$$\\       $$  __$$\\  \\____$$\\ $$  __$$\\  \\____$$\\ \n"
+                       "$$ |$$ /  $$ |$$ /  $$ |\\$$$$$$\\  $$ |  \\__|      $$ |  $$ | $$$$$$$ |$$ |  $$ | $$$$$$$ |\n"
+                       "$$ |$$ |  $$ |$$ |  $$ | \\____$$\\ $$ |            $$ |  $$ |$$  __$$ |$$ |  $$ |$$  __$$ |\n"
+                       "$$ |\\$$$$$$  |\\$$$$$$  |$$$$$$$  |$$ |            $$ |  $$ |\\$$$$$$$ |$$ |  $$ |\\$$$$$$$ |\n"
+                       "\\__| \\______/  \\______/ \\_______/ \\__|            \\__|  \\__| \\_______|\\__|  \\__| \\_______|"
+                       "\n\n-9999999999999999 social credit");
                 break;
         }
         printf("\n\nDo you want to play again?\n");
@@ -317,27 +362,26 @@ void rocpapsci(){
 }
 
 
-double Ctof(double num1){
+double Ctof(double num1) {
     double result;
 
-    result = num1 - 32.0 ;
-    result = result * (5.0/9.0);
+    result = num1 - 32.0;
+    result = result * (5.0 / 9.0);
 
     return result;
 
 }
 
-double Ftoc(double num1){
+double Ftoc(double num1) {
     double result;
 
-    result = num1 * (9.0/5.0) ;
-    result = result  + 32.0;
+    result = num1 * (9.0 / 5.0);
+    result = result + 32.0;
 
     return result;
-
 }
 
-void umrechner(){
+void umrechner() {
     int cf;
     double num1 = 1.0;
     double ret;
@@ -350,19 +394,15 @@ void umrechner(){
     scanf("%lf", &num1);
 
 
-    if (cf == 69){
+    if (cf == 69) {
         printf("haha the funny number \n");
-    }
-    else if (cf == 1){
+    } else if (cf == 1) {
         ret = Ctof(num1);
-        printf("%lf\n",ret);
-    }
-    else if (cf == 2){
+        printf("%lf\n", ret);
+    } else if (cf == 2) {
         ret = Ftoc(num1);
-        printf("%lf\n",ret);
-    } else{
+        printf("%lf\n", ret);
+    } else {
         printf("this is not a valid number :(");
     }
 }
-
-

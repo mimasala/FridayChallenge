@@ -128,30 +128,6 @@ Aufgaben/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/build
 .PHONY : Aufgaben/fast
 
-EggGAME.obj: EggGAME.c.obj
-.PHONY : EggGAME.obj
-
-# target to build an object file
-EggGAME.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/EggGAME.c.obj
-.PHONY : EggGAME.c.obj
-
-EggGAME.i: EggGAME.c.i
-.PHONY : EggGAME.i
-
-# target to preprocess a source file
-EggGAME.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/EggGAME.c.i
-.PHONY : EggGAME.c.i
-
-EggGAME.s: EggGAME.c.s
-.PHONY : EggGAME.s
-
-# target to generate assembly for a file
-EggGAME.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aufgaben.dir\build.make CMakeFiles/Aufgaben.dir/EggGAME.c.s
-.PHONY : EggGAME.c.s
-
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -233,9 +209,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Aufgaben
-	@echo ... EggGAME.obj
-	@echo ... EggGAME.i
-	@echo ... EggGAME.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

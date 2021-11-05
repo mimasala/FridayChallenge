@@ -74,12 +74,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/EggGAME.c">
-			<Option target="Aufgaben"/>
-		</Unit>
-		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/EggGAME.h">
-			<Option target="Aufgaben"/>
-		</Unit>
 		<Unit filename="C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/main.c">
 			<Option target="Aufgaben"/>
 		</Unit>

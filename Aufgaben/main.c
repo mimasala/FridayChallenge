@@ -7,8 +7,6 @@
 #include <math.h>
 #include <stddef.h>
 #include <time.h>
-
-#include "EggGAME.h"
 #include "utils.h"
 
 
@@ -19,7 +17,7 @@ int main() {
     int yn ;
 
     do {
-
+        system("cls");
 
     int choose;
 
@@ -97,7 +95,8 @@ int main() {
         printf("\n");
         umrechner();
     }
-        printf("restart program selection?\n(1)Yes\n(0)No\n");
+        system("cls");
+        printf("restart program selection?\n    (1)Yes\n    (0)No\n");
         scanf("%d",&yn);
 } while (yn == 1);
 

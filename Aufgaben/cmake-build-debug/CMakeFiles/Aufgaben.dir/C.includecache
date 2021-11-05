@@ -6,15 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.c
+C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/main.c
 string.h
--
-stdio.h
 -
 stdlib.h
 -
-conio.h
+stdio.h
 -
 time.h
 -
+conio.h
+-
+stdbool.h
+-
+math.h
+-
+stddef.h
+-
+time.h
+-
+utils.h
+C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.h
+
+C:/Source/projects-c/FridayREPO/FridayChallenge/Aufgaben/utils.h
 
